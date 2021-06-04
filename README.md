@@ -19,7 +19,9 @@ We have attributed things that we can check when we look at our Instagram accoun
 # Use MachineLearning
 We have used a total of six classification models: Random Forest, GradintBoosting, Logistic Regression, XGBoost, LGBM, and Decision Tree. We set the learning data and verification data at an 8:2 ratio. We tabulated the accuracy of the learning data and the accuracy of the verification data when six models were rotated.
 
-*
+*![머신러닝 정확도](https://user-images.githubusercontent.com/66362713/120845787-3a69ef80-c5ac-11eb-9a79-4d96411a3d89.PNG)
+
+
 
 And the properties are originally made up of int-type.
 
@@ -29,13 +31,15 @@ Thirdly, only the fake part was changed to the bool type.
 
 **As a result, it had the best accuracy when it consisted only of int types.**
 
-*
+*![머신러닝 정확도 표로 정리](https://user-images.githubusercontent.com/66362713/120845752-3047f100-c5ac-11eb-8452-6229bcc17839.PNG)
+
 
 Based on the accuracy of the verification data, the three models, Random Forest, LGBM, and Gradient Boosting, had good accuracy. **We tried optuna to improve accuracy with these three models, but the accuracy remained unchanged.**
 
 Then, with these three models, we subtract only one attribute and turn it back to the model to see which attribute affects the accuracy, and we see a difference from the original accuracy. **I could see that the number of followers and followers affected the accuracy the most.**
 
-*
+*![영향을 많이 받는 속성들](https://user-images.githubusercontent.com/66362713/120845772-33db7800-c5ac-11eb-8d61-b61a0ba69266.PNG)
+
 
 # Correlation
 We looked at the correlation because we were curious about the relationship between each attribute. The correlation between properties is like this.
