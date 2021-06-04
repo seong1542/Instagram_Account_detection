@@ -56,14 +56,18 @@ I used DNN as a deep learning model using statistical data. If you put the data 
 Therefore, I adopted and used the MinMaxScaler.
 * Sequential was used in the DNN model to stack layers, giving a different number of hidden units on each layer.
 * We used 'relu' as a function of batch normalization and activation on each layer.
-* The most accurate layer was four out of the (4,5,6) layers.
+* The most accurate layer was 5 out of the (4,5,6) layers.
 * Adam's learning rate was best when 0.001 of (0.01, 0.005, 0.001).
-* Dropout was used on each floor, with the lowest loss value of 0.3 out of (0.1, 0.2, 0.3, 0.4)
+* Dropout was used on each floor, with the lowest loss value of 0.2 out of (0.1, 0.2, 0.3)
 * The batch size was best when it was 64 out of (32, 64, 128).
 
-As a result, four layers were stacked with sequential, using 'relu' as a function of batch normalization and activation between each layer, Adam's learning rate was 0.001, Dropout was 0.3, and batch size was 64, which showed the lowest loss value and the highest accuracy.
+![dnn최적](https://user-images.githubusercontent.com/66362713/120860205-3c3dae00-c5c0-11eb-9dba-533e97d71d64.PNG)
 
-![딥러닝](https://user-images.githubusercontent.com/66362713/120828593-aaba4600-c597-11eb-9815-a621005279bc.PNG)
+
+As a result, 5 layers were stacked with sequential, using 'relu' as a function of batch normalization and activation between each layer, Adam's learning rate was 0.001, Dropout was 0.2, and batch size was 64, which showed the lowest loss value and the highest accuracy.
+
+![딥러닝](https://user-images.githubusercontent.com/66362713/120860050-0f899680-c5c0-11eb-8383-e656ca88e78b.PNG)
+
 
 
 We have compiled the above in a file. The file name is '인스타그램_딥러닝_실험_softmax기준.ipynb'
