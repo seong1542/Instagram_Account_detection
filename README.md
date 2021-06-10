@@ -79,6 +79,14 @@ We have compiled the above in a file. The file name is '인스타그램_딥러�
 # DeepLearning - CNN
 We used the CNN model using the captured pictures of Instagram accounts as image data. With all the status bars removed from the photos, learning about real and fake accounts showed a 40 to 50% chance.
 We used transform to improve this accuracy, Resize, RandomResolvedCrop, RandomHorizontalFlip, RandomAffine, Rotation, ToTensor, Normalize...I tried using etc.
+
+![image](https://user-images.githubusercontent.com/66362713/121514897-7e834700-ca27-11eb-9ba8-6eae4aa5f125.png)
+
+
+
+* transfrom = {Resize : (160,350), RandomResizedCrop : 160, RandomHorizontalFlip : 0.5, ToTensor, Normalize :[0.155,0.5,0.885], [0.229,0.224,0.225]}
+
+
 We tried three algorithms: "resnet18", "mobilenet", and "shufflenet".
 After trying with a large number of cases, we found that the best accuracy was achieved when using the 'resnet' algorithm, using Resize, RandomResolvedCrop, RandomHorizontalFlip, ToTensor, Normalize.
 
