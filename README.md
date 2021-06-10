@@ -76,5 +76,12 @@ We have compiled the above in a file. The file name is '인스타그램_딥러�
 **However, statistical data show that machine learning is more accurate than DNN.**
 
 
+# DeepLearning - CNN
+We used the CNN model using the captured pictures of Instagram accounts as image data. With all the status bars removed from the photos, learning about real and fake accounts showed a 40 to 50% chance.
+We used transform to improve this accuracy, Resize, RandomResolvedCrop, RandomHorizontalFlip, RandomAffine, Rotation, ToTensor, Normalize...I tried using etc.
+We tried three algorithms: "resnet18", "mobilenet", and "shufflenet".
+After trying with a large number of cases, we found that the best accuracy was achieved when using the 'resnet' algorithm, using Resize, RandomResolvedCrop, RandomHorizontalFlip, ToTensor, Normalize.
 
+![cnn결과](https://user-images.githubusercontent.com/66362713/121469278-2cc2c880-c9f7-11eb-98c3-3a7cebfe733f.png)
 
+We tested it by putting 20 real accounts and 20 fake accounts ourselves, and we found that we predicted 32 accounts out of 40 accounts.
