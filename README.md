@@ -82,6 +82,7 @@ We used transform to improve this accuracy, Resize, RandomResolvedCrop, RandomHo
 We tried three algorithms: "resnet18", "mobilenet", and "shufflenet".
 After trying with a large number of cases, we found that the best accuracy was achieved when using the 'resnet' algorithm, using Resize, RandomResolvedCrop, RandomHorizontalFlip, ToTensor, Normalize.
 
-![cnn결과](https://user-images.githubusercontent.com/66362713/121469278-2cc2c880-c9f7-11eb-98c3-3a7cebfe733f.png)
+![32개맞앗다](https://user-images.githubusercontent.com/66362713/121469424-6c89b000-c9f7-11eb-89d9-2525d22673cb.PNG)
+
 
 We tested it by putting 20 real accounts and 20 fake accounts ourselves, and we found that we predicted 32 accounts out of 40 accounts.
